@@ -74,16 +74,16 @@ h6 {
 }
 
 /* Dark overlay*/
-#hero::before {
+/* #hero::before {
 	content: "";
 	position: absolute;
 	inset: 0;
 	z-index: 0;
 	pointer-events: none;
 	background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.4));
-}
+} */
 
-#hero::after {
+/* #hero::after {
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -94,6 +94,20 @@ h6 {
 	background-size: 30px 30px;
 	mix-blend-mode: overlay;
 	opacity: 0.5;
+} */
+#hero::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: radial-gradient(
+		circle,
+		rgb(4 4 4 / 24%) 1px,
+		#00000017 1px
+	);
+	background-size: 3px 3px; /*розмір зерна */
+	/* opacity: 0.4; */
+	pointer-events: none;
+	z-index: 1;
 }
 
 /* HEADER */
