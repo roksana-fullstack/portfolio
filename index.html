@@ -1,1 +1,41 @@
-<h1>Hello, world!</h1>
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<!-- <div class="logo">Моє Ім’я</div> -->
+			<nav>
+				<ul>
+					<li><a href="#projects">projekte</a></li>
+					<li><a href="#about">über mich</a></li>
+					<li><a href="#contact">kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="hero">
+			<video autoplay muted loop id="hero-video">
+				<source src="assets/videos/hero-video.mp4" type="video/mp4" />
+			</video>
+
+			<div class="hero-content">
+				<h1>Привіт, я Ім’я</h1>
+				<p>Фронтенд-розробник</p>
+				<a href="#projects" class="btn">Переглянути роботи</a>
+			</div>
+		</section>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>
