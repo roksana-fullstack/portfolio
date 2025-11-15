@@ -14,14 +14,15 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<!-- <div class="logo">Моє Ім’я</div> -->
-			<nav>
-				<ul>
-					<li><a href="#projects">projekte</a></li>
-					<li><a href="#about">über mich</a></li>
-					<li><a href="#contact">kontakt</a></li>
-				</ul>
-			</nav>
+			<div class="container">
+				<nav>
+					<ul class="main-header__list">
+						<li><a href="#projects" class="titel-3">projekte</a></li>
+						<li><a href="#about" class="titel-3">über mich</a></li>
+						<li><a href="#contact" class="titel-3">kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 
 		<section id="hero">
@@ -30,11 +31,82 @@
 			</video>
 
 			<div class="hero-content">
-				<h1>Привіт, я Ім’я</h1>
-				<p>Фронтенд-розробник</p>
-				<a href="#projects" class="btn">Переглянути роботи</a>
+				<div class="container">
+					<h1 class="titel-1">Oksana Bulakh</h1>
+				</div>
 			</div>
 		</section>
+
+		<section class="section-pad">
+			<div class="container-2">
+				<h2 class="titel-2">projekte</h2>
+				<div class="projects-grid">
+					<a href="#" class="project-card">
+						<img src="assets/images/pic-1.webp" alt="Проєкт 1" />
+						<div class="overlay"><span>Projekt 1</span></div>
+					</a>
+
+					<a href="#" class="project-card">
+						<img src="assets/images/pic-1.webp" alt="Projekt 2" />
+						<div class="overlay"><span>Projekt 2</span></div>
+					</a>
+
+					<a href="#" class="project-card">
+						<img src="assets/images/pic-1.webp" alt="Projekt 3" />
+						<div class="overlay"><span>Projekt 3</span></div>
+					</a>
+
+					<a href="#" class="project-card">
+						<img src="assets/images/pic-1.webp" alt="Projekt 4" />
+						<div class="overlay"><span>Projekt 4</span></div>
+					</a>
+
+					<a href="#" class="project-card">
+						<img src="assets/images/pic-1.webp" alt="Projekt 5" />
+						<div class="overlay"><span>Projekt 5</span></div>
+					</a>
+
+					<a href="#" class="project-card">
+						<img src="assets/images/pic-1.webp" alt="Projekt 6" />
+						<div class="overlay"><span>Projekt 6</span></div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-layout-1"></section>
+
+		<section id="about" class="section-pad">
+			<div class="container">
+				<h1 class="titel-2">über mich</h1>
+				<p class="about_text"
+					>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+					perspiciatis numquam tempora fugit earum asperiores eligendi, ea
+					quaerat assumenda suscipit dolorem culpa amet dolores laborum impedit
+					sit optio. Nulla ut placeat harum consectetur quis illo ducimus,
+					aliquid earum perspiciatis exercitationem. Aut esse libero laudantium
+					doloribus architecto dolorem perferendis adipisci alias.</p
+				>
+			</div>
+		</section>
+
+		<section class="bg-layout-2"></section>
+
+		<section class="section-pad">
+			<div class="container-2">
+				<!-- <h2 class="titel-2">kontakt</h2> -->
+				<div class="kontakt-text">
+					<p class="titel-3">Oksana Bulakh</p>
+					<p>oksana.bulakh@gmx.de</p>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="copyright">©2025 Oksana Bulakh</p>
+			</div>
+		</footer>
 
 		<script src="scripts.js"></script>
 	</body>
