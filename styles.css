@@ -2,6 +2,9 @@
 	--primary-color: #333;
 	--text-light: #fff;
 	--bg-color: #fff;
+	--accent-color: #30130082;
+	--hover-bg: #ebebebaa;
+
 	--g-10: 10px;
 	--g-12: 12px;
 	--g-20: 20px;
@@ -18,7 +21,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: "Stack Sans Text", sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.6;
@@ -58,7 +61,7 @@ h6 {
 	line-height: 1.2;
 }
 .titel-1 {
-	font-size: clamp(2.5rem, 4.5vw + 1rem, 5rem);
+	font-size: clamp(2.5rem, 4.5vw + 1.2rem, 5rem);
 	color: var(--text-light);
 }
 .titel-3 {
@@ -66,9 +69,20 @@ h6 {
 	text-align: center;
 }
 .titel-2 {
-	font-size: clamp(2rem, 3.6vw + 0.25rem, 4.5rem);
+	font-size: clamp(44px, 2.4vw + 36px, 82px);
 	text-align: center;
 	margin-bottom: var(--g-30);
+}
+@media (min-width: 1100px) {
+	.titel-1 {
+		font-size: 90px;
+		/* font-weight: 700; */
+		opacity: 0.8;
+	}
+	.titel-2 {
+		margin-bottom: 82px;
+		margin-bottom: var(--g-40);
+	}
 }
 .section-pad {
 	padding-block: var(--g-30);
@@ -77,9 +91,6 @@ h6 {
 	.section-pad {
 		padding-block: var(--g-60);
 	}
-	.titel-2 {
-		margin-bottom: var(--g-40);
-	}
 }
 
 /* HERO */
@@ -87,8 +98,14 @@ h6 {
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	max-height: 700px;
+	max-height: 770px;
 	overflow: hidden;
+
+	/* background-image: url(assets/images/pic-8.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed; */
 }
 
 #hero video {
@@ -103,6 +120,7 @@ h6 {
 	transform: translate(-50%, -50%);
 	object-fit: cover;
 	filter: grayscale(0.8);
+	background-attachment: fixed;
 }
 
 /* HERO TEXT */
@@ -163,6 +181,7 @@ h6 {
 .main-header__list li a {
 	color: var(--text-light);
 	text-decoration: none;
+	font-weight: 500;
 }
 
 /* center-origin animated underline */
@@ -329,11 +348,119 @@ h6 {
 	inset: 0;
 	background: rgba(0, 0, 0, 0.256);
 }
-.kontakt-text {
+
+/* ////////////////////////////////////// */
+.contact-form {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.contact-form {
+		width: 70%;
+	}
+}
+@media (min-width: 992px) {
+	.contact-form {
+		width: 50%;
+	}
+}
+.contact-form label {
+	display: block;
+	margin-bottom: 6px;
+	margin-top: 7px;
+}
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	border: 1px solid var(--primary-color);
+	padding: var(--g-12);
+	background: transparent;
+	transition: 0.25s ease;
+	font-weight: 300;
+}
+
+.contact-form textarea {
+	height: 160px;
+	resize: vertical;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border-color: var(--accent-color);
+	background-color: var(--hover-bg);
+	outline: none;
+}
+
+.form-footer {
+	margin-top: var(--g-12);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.socials {
+	display: flex;
+	align-items: center;
+}
+.socials a {
+	display: block;
+	width: var(--g-30);
+	height: var(--g-30);
+	margin-right: var(--g-10);
+	font-size: var(--g-12);
+	text-decoration: none;
+	color: var(--primary-color);
+	transition: 0.25s ease;
+	border-radius: 50%;
+}
+.socials a img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	opacity: 0.6;
+}
+
+.socials a:hover {
+	color: var(--primary-color);
+}
+.socials a:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 4px rgba(48, 19, 0, 0.16);
+}
+.submit-btn {
+	background-color: var(--primary-color);
+	color: #fff;
+	border: 2px solid transparent;
+	box-sizing: border-box;
+	padding: calc(var(--g-12) - 2px) var(--g-50);
+	cursor: pointer;
+	transition: background-color 240ms ease, border-color 240ms ease,
+		box-shadow 180ms ease, transform 160ms ease;
+}
+
+.submit-btn:hover {
+	background-color: var(--accent-color);
+	/* keep border transparent or change color without changing width */
+	border-color: transparent;
+}
+
+.submit-btn:active {
+	border: 1px solid var(--primary-color);
+}
+
+.submit-btn:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 4px rgba(48, 19, 0, 0.16);
+}
+
+/* .kontakt-text {
 	text-align: center;
 	max-width: 70%;
 	margin-inline: auto;
-}
+} */
 
 .footer {
 	padding-top: var(--g-40);

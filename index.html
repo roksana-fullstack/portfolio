@@ -6,7 +6,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
 		<title>Portfolio</title>
@@ -29,6 +29,7 @@
 			<video autoplay muted loop id="hero-video">
 				<source src="assets/videos/hero-video.mp4" type="video/mp4" />
 			</video>
+			<!-- <div class=""><img src="./assets/images/pic-8.jpg" alt="" /></div> -->
 
 			<div class="hero-content">
 				<div class="container">
@@ -92,13 +93,54 @@
 
 		<section class="bg-layout-2"></section>
 
-		<section class="section-pad">
+		<!-- <section class="section-pad">
 			<div class="container-2">
-				<!-- <h2 class="titel-2">kontakt</h2> -->
+				
 				<div class="kontakt-text">
 					<p class="titel-3">Oksana Bulakh</p>
 					<p>oksana.bulakh@gmx.de</p>
 				</div>
+			</div>
+		</section> -->
+
+		<section class="section-pad">
+			<div class="container">
+				<form
+					name="contact"
+					method="POST"
+					data-netlify="true"
+					class="contact-form"
+					id="contactForm"
+				>
+					<label>Name *</label>
+					<input type="text" required />
+
+					<label>Email *</label>
+					<input type="email" required />
+
+					<label>Nachricht hier eingeben *</label>
+					<textarea required></textarea>
+
+					<div class="form-footer">
+						<div class="socials">
+							<a
+								href="https://github.com/roksana-fullstack"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img src="assets/icons/github.svg" alt="github-icon" />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/oksana-bulakh-964b4719b/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img src="assets/icons/linkedin.svg" alt="linkedin-icon" />
+							</a>
+						</div>
+						<button type="submit" class="submit-btn">Absenden</button>
+					</div>
+				</form>
 			</div>
 		</section>
 
