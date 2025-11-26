@@ -424,7 +424,7 @@ h6 {
 }
 
 .socials a:hover {
-	color: var(--primary-color);
+	box-shadow: 0 0 0 4px rgba(48, 19, 0, 0.16);
 }
 .socials a:focus-visible {
 	outline: none;
@@ -432,6 +432,7 @@ h6 {
 }
 .submit-btn {
 	background-color: var(--primary-color);
+	font-size: 15px;
 	color: #fff;
 	border: 2px solid transparent;
 	box-sizing: border-box;
@@ -455,12 +456,6 @@ h6 {
 	outline: none;
 	box-shadow: 0 0 0 4px rgba(48, 19, 0, 0.16);
 }
-
-/* .kontakt-text {
-	text-align: center;
-	max-width: 70%;
-	margin-inline: auto;
-} */
 
 .footer {
 	padding-top: var(--g-40);
